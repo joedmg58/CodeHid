@@ -95,6 +95,7 @@ header button:hover {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
+    
 }
 
 .card {
@@ -151,15 +152,18 @@ footer ul {
 }
 
 @media only screen and (max-width: 600px) {
+    .navbar {
+        padding: 5px 10px;
+    }
+
     .card-container {
         flex-flow: column;
-        justify-content: center;
+        align-items: center;
     }
 
     .card {
         margin: 10px;
         padding: 0 10px;
-        text-align: center;
         width: 70%;
     }
 
@@ -169,7 +173,7 @@ footer ul {
     }
 
     .company-bio {
-        grid-column: 1;
+        grid-column: 1 / span 1;
         grid-row: 1;
     }
     
