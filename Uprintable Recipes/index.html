@@ -3,28 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
     <title>Don't Print Me !</title>
 </head>
 <body>
 
+<div id="print">
+    <p>Sorry, you can not print this page. Only to view online.</p>
+</div>    
+
+<div id="noprint">
+
     <div class="container">
 
         <header>
-            <h1>My unprintable cooking recipes</h1>
+            <h1>My Unprintable Cooking Recipes</h1>
         </header>
 
-        <div class="recipe-list">
+        <div class="recipe-list-container">
 
-            <ul>
+            <ul class="recipe-list">
                 <li>
-                    <div class="recipe">
-                        <img class="recip-image" src="" alt="">
-                        <p class="recipe-description"></p>
+                    <div class="recipe sweet">
+                        <img class="recipe-image" src="./img/paella.jpg" alt="Paella">
+                        <h3 class="recipe-title">Paella Valenciana</h3>
+                        <div class="recipe-description">
+                            <p>Paella is wonderful any time of year and a robust Valenciana – with sausage, 
+                            chicken and seafood – is especially welcome in the fall. This dish has been on 
+                            our menu from the very start and remains one of our most popular. If you don't have 
+                            a sofrito ready to go, then substitute with tomato paste. Once you master the basics 
+                            of great saffron-infused paella the variations are endless.</p>
+                        </div>
                     </div>
                 </li>
+
+                <li>
+                    <div class="recipe sour">
+                        <img class="recipe-image" src="./img/Ribeye.jpg" alt="Ribeye">
+                        <h3 class="recipe-title">Spice-Crusted Veal Rib Eye</h3>
+                        <div class="recipe-description">
+                            <p>Ingredients:</p>
+                            <ul>
+                                <li>1 tablespoon crushed red pepper</li>
+                                <li>1 tablespoon whole Szechuan peppercorns</li>
+                                <li>1 tablespoon coriander seeds 1 1/2 teaspoons</li>
+                                <li>cumin seeds</li>
+                                <li>1 1/2 teaspoons sweet smoked paprika (pimentón)</li>
+                                <li>2 whole star anise or 1 1/2 teaspoons ground</li>
+                                <li>1 (3- to 4-pound) veal rib eye roast, trimmed but with the fat cap left on, and tied</li>
+                                <li>Extra-virgin olive oil</li>
+                                <li>Kosher salt</li>
+                                <li>5 or 6 sprigs fresh thyme</li>
+                                <li>5 or 6 cloves garlic, peeled</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="recipe sweet">
+                        <img class="recipe-image" src="./img/wcck.jpg" alt="">
+                        <h3 class="recipe-title">Warm Chocolate Cake</h3>
+                        <p class="recipe-description">
+                            There are a few claims about who invented this delicious cake. I’ve heard David Bouley created 
+                            it back in 1985. Legend also says Jean-Georges Vongerichten made the first molten cake. And if you ask 
+                            Jacques Torres, this tasty treat has its origins in the chocolatiers of France. No matter its creator, 
+                            I know you’ll enjoy this luscious, chocolatey dessert.
+                        </p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="recipe sour">
+                        <img class="recipe-image" src="./img/BeefRagout_0.jpg" alt="">
+                        <h3 class="recipe-title">Beef Ragout With Garganelli Pasta</h3>
+                        <p class="recipe-description">
+                            This slow cooked short rib ragout is a great weekend project. The time invested to make this dish is 
+                            well worth it. One bite of the tender, melt-in-your-mouth short ribs will make you so happy you’ll want to 
+                            make it every weekend. You can also pair this rich and hearty ragout with olive oil potato puree or parmesan 
+                            polenta. Either way, this ragout is the perfect comfort food!
+                        </p>
+                    </div>
+                </li>
+
             </ul>
-        </div>
+
+        </div> <!-- end of recipe-list -->
     </div>
+
+</div> <!-- end of noprint -->
 
 </body>
 </html>

@@ -1,0 +1,74 @@
+.container {
+    width: 80%;
+    background-color: lightgoldenrodyellow;
+    margin: auto;
+    padding: 20px;
+    border: 3px dashed darkblue;
+}
+
+header {
+    text-align: center;
+    color: darkblue;
+    text-shadow: 3px 3px 5px lightblue;
+}
+
+.recipe-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.recipe {
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    border: 0px solid gray;
+    box-shadow: 5px 5px 10px gray;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+}
+
+.recipe-image {
+    display: block;
+    width: 100%;
+    height: 200px;
+    transition: transform 200ms;
+}
+
+.recipe:hover > .recipe-image{
+    transform: scale(1.05);
+}
+
+
+.recipe-description {
+    height: 30%;
+    overflow-y: auto;
+    color: gray;
+}
+
+.sweet::before {
+    content: 'For those with a sweet tooth!';
+    color: purple;
+    background-color: white;
+    position: absolute;
+}
+
+
+.sour::after {
+    content: 'For the brave ones!';
+    color: red;
+    background-color: white;
+    position: absolute;
+}
+
+#print {
+    display: none
+}
+
+#noprint {
+    display: block
+}
